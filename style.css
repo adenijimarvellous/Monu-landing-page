@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background:
+        linear-gradient(rgba(158, 181, 243, 0.55),
+            rgba(158, 181, 243, 0.55)),
+        url('images/mixed-programers-team-working-group-project-multiple-screens-showing-running-code-it-startup-office-coder-pointing-pencil-computer-screen-with-software-compiling-code.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+nav {
+    border-bottom: 1px #000 solid;
+}
+
+.navbar .btn {
+    font-size: 15px;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+/* CENTER HERO CONTENT */
+.hero-content {
+    padding-top: 6rem;
+    max-width: 600px;
+}
+
+/* CARD SECTION */
+.cards-section {
+    position: relative;
+    margin-top: -6rem;
+    z-index: 10;
+}
+
+.service-card {
+    background: #0d6efd;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.35s ease;
+}
+
+.service-card .icon {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    line-height: 1.5;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+    background: #0b5ed7;
+}
+
+.customize-hr {
+    width: 80px;
+    border: 2px solid #0d6efd;
+    opacity: 1;
+}
+
+.lead-description {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.mockup-img {
+    max-width: 95%;
+    height: auto;
+}
+
+/* CUSTOMIZE SECTION */
+.customize-section {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url("images/complex-aerial-view-city.jpg") center/cover no-repeat;
+    min-height: 40dvh;
+    display: flex;
+    align-items: center;
+}
+
+/* Subtext for the heading */
+.section-subtext {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+/* Input styling */
+.input-field {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect */
+.input-field:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.4);
+}
+
+/* Placeholder */
+.input-field::placeholder {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Submit button */
+.submit-btn {
+    padding: 0.55rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.submit-btn:hover {
+    background: #0d6efd;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* FEATURES SECTION */
+/* Service Cards */
+.service-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* background: #fff; */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2.2rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.service-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+}
+
+/* <!-- PRICING SECTION --> */
+.pricing-section {
+    background-color: #E7E8FD;
+}
+
+/* Subtext */
+.section-subtext {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Price Card */
+.price-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Price Styling */
+.card-price {
+    font-size: 1.8rem;
+}
+
+.price-currency {
+    font-size: 0.6em;
+    vertical-align: top;
+}
+
+/* Feature List */
+.price-features li {
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+    color: #333;
+}
+
+/* <!-- STATS SECTION --> */
+.stats-section {
+    background-color: var(--bs-primary);
+}
+
+/* Icon Styling */
+.stat-icon {
+    font-size: 2rem;
+}
+
+/* Number Styling */
+.stat-number {
+    font-weight: 700;
+}
+
+/* Label Styling */
+.stat-label {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.stats-section .col-6:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+/* TEAM SECTION */
+.team-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 50%;
+    height: 50%; */
+    background: rgba(255, 255, 255, 0.72);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: 0.35s ease;
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
+
+.hover-card:hover .info-overlay {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.team-role {
+    font-size: 0.75rem;
+}
+
+.social-btn {
+    font-size: 1rem;
+    color: #222;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    color: var(--bs-primary);
+}
+
+/* BLOG SECTION */
+.section-sub {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* Blog card image hover zoom */
+.card-img-top {
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+
+.blog-text {
+    font-size: 0.75rem;
+}
+
+.blog-link {
+    font-size: 0.8rem;
+    color: var(--bs-primary);
+    text-decoration: none;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
+
+.blog-author img {
+    object-fit: cover;
+}
+
+/* FOOTER SECTION */
+.footer a {
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0b5ed7;
+}
+
+
+
+
+/* MEDIA QUERIES - MOBILE FIXES */
+@media (max-width: 768px) {
+
+    /* HERO SECTION */
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background: rgba(226, 228, 234, 0.55);
+        padding-bottom: 1rem;
+    }
+
+    .hero-content {
+        margin-top: 6rem;
+        /* push content down slightly so it doesn’t hide behind navbar */
+    }
+
+    .hero-content {
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar-brand h4 {
+        font-size: 1.2rem;
+    }
+
+    .cards-section {
+        margin-top: -4rem;
+    }
+
+    .customize-hr {
+        margin: 0 auto;
+    }
+
+    .customize-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    /* FEATURE SECTION */
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .service-text {
+        font-size: 0.78rem;
+    }
+
+    /* <!-- PRICING SECTION --> */
+    .card-price {
+        font-size: 1.6rem;
+    }
+
+    .price-features li {
+        font-size: 0.8rem;
+    }
+
+    /* <!-- STATS SECTION --> */
+    .stat-icon {
+        font-size: 1.7rem;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    /* TEAM AND BLOG SECTION */
+    .info-overlay {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+    .info-overlay {
+        padding: 1.5rem;
+    }
+
+    .info-overlay h4 {
+        font-size: 1rem;
+    }
+
+    .info-overlay p {
+        font-size: 0.65rem;
+    }
+
+    .info-overlay a {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 0.8rem !important;
+    }
+
+    .card h4 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.65rem !important;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-body h6 {
+        font-size: 0.9rem;
+    }
+
+    .card-body p {
+        font-size: 0.7rem;
+    }
+
+}
+
+/*  */
